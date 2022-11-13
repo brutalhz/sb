@@ -1,0 +1,22 @@
+[clients:children]
+openvpn
+monitoring
+
+[backup]
+192.168.244.179
+
+[openvpn]
+192.168.244.181
+
+[monitoring]
+192.168.244.182
+
+[gitlab]
+192.168.244.183
+
+#[store]
+#192.168.244.185
+
+[all:vars]
+ansible_ssh_private_key_file = ~/.ssh/id_rsa
+ansible_ssh_user = ubuntu
